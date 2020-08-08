@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oOx-N0-aaJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Country Detail View Controller-->
+        <scene sceneID="5NU-vb-dtA">
+            <objects>
+                <viewController id="oOx-N0-aaJ" customClass="CountryDetailViewController" customModule="Corona_MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bNQ-dk-u6u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbr-pl-vDm">
+                                <rect key="frame" x="16" y="76" width="382" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="M45-KC-90i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NX1-cH-aTe">
+                                <rect key="frame" x="16" y="129" width="382" height="717"/>
+                                <connections>
+                                    <segue destination="Slk-de-mCj" kind="embed" identifier="chartView" id="TQi-te-Vlu"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rbr-pl-vDm" firstAttribute="leading" secondItem="sku-7E-jJa" secondAttribute="leading" constant="16" id="DJQ-lu-Cj5"/>
+                            <constraint firstItem="sku-7E-jJa" firstAttribute="trailing" secondItem="rbr-pl-vDm" secondAttribute="trailing" constant="16" id="Ekf-dh-yS2"/>
+                            <constraint firstItem="NX1-cH-aTe" firstAttribute="top" secondItem="rbr-pl-vDm" secondAttribute="bottom" constant="32" id="OX5-by-ESY"/>
+                            <constraint firstItem="rbr-pl-vDm" firstAttribute="top" secondItem="sku-7E-jJa" secondAttribute="top" constant="32" id="UrS-ES-1So"/>
+                            <constraint firstItem="sku-7E-jJa" firstAttribute="trailing" secondItem="NX1-cH-aTe" secondAttribute="trailing" constant="16" id="hav-nP-gdK"/>
+                            <constraint firstItem="sku-7E-jJa" firstAttribute="bottom" secondItem="NX1-cH-aTe" secondAttribute="bottom" constant="16" id="riD-sr-M5d"/>
+                            <constraint firstItem="NX1-cH-aTe" firstAttribute="leading" secondItem="sku-7E-jJa" secondAttribute="leading" constant="16" id="vZe-SN-b7x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sku-7E-jJa"/>
+                    </view>
+                    <connections>
+                        <outlet property="countryNameLbl" destination="rbr-pl-vDm" id="LYS-mC-kBJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WT3-yE-WRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="135"/>
+        </scene>
+        <!--Line Chart View Controller-->
+        <scene sceneID="OiR-o1-h1L">
+            <objects>
+                <viewController id="Slk-de-mCj" customClass="LineChartViewController" customModule="Corona_MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1oh-k9-7po">
+                        <rect key="frame" x="0.0" y="0.0" width="382" height="717"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEL-HF-cig" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="382" height="717"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iEL-HF-cig" firstAttribute="leading" secondItem="1oh-k9-7po" secondAttribute="leading" id="DA7-8N-PcD"/>
+                            <constraint firstAttribute="trailing" secondItem="iEL-HF-cig" secondAttribute="trailing" id="NEL-4B-w5O"/>
+                            <constraint firstItem="iEL-HF-cig" firstAttribute="top" secondItem="1oh-k9-7po" secondAttribute="top" id="PZn-2c-snv"/>
+                            <constraint firstAttribute="bottom" secondItem="iEL-HF-cig" secondAttribute="bottom" id="ajX-dX-14y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="iEL-HF-cig" id="nk4-Vb-1j5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cfx-1y-dXG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="135"/>
+        </scene>
+    </scenes>
+</document>

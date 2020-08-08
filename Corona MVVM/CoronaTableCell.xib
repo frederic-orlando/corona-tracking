@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="coronaCell" id="knH-0M-r3F" customClass="CoronaTableCell" customModule="Corona_MVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="knH-0M-r3F" id="IZj-4D-qFu">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="In3-eG-xVV">
+                        <rect key="frame" x="16" y="8" width="351" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="jdN-LJ-v7p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqT-Nr-mpg">
+                        <rect key="frame" x="16" y="33" width="351" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="qMj-5a-4Qm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fqT-Nr-mpg" firstAttribute="width" secondItem="In3-eG-xVV" secondAttribute="width" id="6FV-rX-XLE"/>
+                    <constraint firstItem="fqT-Nr-mpg" firstAttribute="leading" secondItem="In3-eG-xVV" secondAttribute="leading" id="9Kw-tl-ifs"/>
+                    <constraint firstItem="In3-eG-xVV" firstAttribute="top" secondItem="IZj-4D-qFu" secondAttribute="top" constant="8" id="Fru-1B-bt9"/>
+                    <constraint firstAttribute="bottom" secondItem="fqT-Nr-mpg" secondAttribute="bottom" constant="8" id="Qfv-Y6-D1T"/>
+                    <constraint firstItem="In3-eG-xVV" firstAttribute="leading" secondItem="IZj-4D-qFu" secondAttribute="leading" constant="16" id="d73-nz-HdU"/>
+                    <constraint firstItem="fqT-Nr-mpg" firstAttribute="top" secondItem="In3-eG-xVV" secondAttribute="bottom" constant="4" id="eUT-ND-EBu"/>
+                    <constraint firstAttribute="trailing" secondItem="In3-eG-xVV" secondAttribute="trailing" constant="16" id="pGa-08-B2l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="coronaCountLbl" destination="fqT-Nr-mpg" id="NTt-7u-Tii"/>
+                <outlet property="countryNameLbl" destination="In3-eG-xVV" id="aKY-Kt-a3A"/>
+            </connections>
+            <point key="canvasLocation" x="100" y="482"/>
+        </tableViewCell>
+    </objects>
+</document>

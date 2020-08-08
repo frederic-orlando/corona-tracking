@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A71F3F931FF01CB4AF2BC9D /* Pods_Corona_MVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D09FB403FD9B330C96880D /* Pods_Corona_MVVMTests.framework */; };
+		6A1A06784B73ABDDE384B252 /* Pods_Corona_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934C7940879BF7A0C7CD7E6B /* Pods_Corona_MVVM.framework */; };
+		932ABC0324D2FD28004D9C28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABC0224D2FD28004D9C28 /* AppDelegate.swift */; };
+		932ABC0524D2FD28004D9C28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABC0424D2FD28004D9C28 /* SceneDelegate.swift */; };
+		932ABC0724D2FD28004D9C28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABC0624D2FD28004D9C28 /* ViewController.swift */; };
+		932ABC0A24D2FD28004D9C28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932ABC0824D2FD28004D9C28 /* Main.storyboard */; };
+		932ABC0C24D2FD28004D9C28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932ABC0B24D2FD28004D9C28 /* Assets.xcassets */; };
+		932ABC0F24D2FD28004D9C28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932ABC0D24D2FD28004D9C28 /* LaunchScreen.storyboard */; };
+		932ABC1A24D2FD28004D9C28 /* Corona_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABC1924D2FD28004D9C28 /* Corona_MVVMTests.swift */; };
+		932ABC2524D2FD28004D9C28 /* Corona_MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABC2424D2FD28004D9C28 /* Corona_MVVMUITests.swift */; };
+		932ABC3524D30007004D9C28 /* CoronaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABC3424D30007004D9C28 /* CoronaTableCell.swift */; };
+		932ABC3824D30BE2004D9C28 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABC3724D30BE2004D9C28 /* Country.swift */; };
+		932ABC3A24D3CD4F004D9C28 /* CoronaTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 932ABC3924D3CD4F004D9C28 /* CoronaTableCell.xib */; };
+		932ABC3C24D3D017004D9C28 /* CoronaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABC3B24D3D017004D9C28 /* CoronaViewModel.swift */; };
+		932ABC3E24D3D5CE004D9C28 /* CountryDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932ABC3D24D3D5CE004D9C28 /* CountryDetail.storyboard */; };
+		932ABC4024D3D60B004D9C28 /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABC3F24D3D60B004D9C28 /* CountryDetailViewController.swift */; };
+		932ABC4224D3DE76004D9C28 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABC4124D3DE76004D9C28 /* URL.swift */; };
+		932ABC4424D3E3BA004D9C28 /* Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABC4324D3E3BA004D9C28 /* Count.swift */; };
+		93B58A2E24DEF9E70023702F /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B58A2D24DEF9E70023702F /* LineChartViewController.swift */; };
+		93B888A324D5807F00826F7A /* ResponseGetSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B888A224D5807F00826F7A /* ResponseGetSummary.swift */; };
+		93F6A17824DB7FAD00BF5E8E /* FormatterDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6A17724DB7FAD00BF5E8E /* FormatterDate.swift */; };
+		93F6A17A24DB80F900BF5E8E /* DailyCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6A17924DB80F900BF5E8E /* DailyCount.swift */; };
+		E442C1821BE54240C5349383 /* Pods_Corona_MVVM_Corona_MVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B965083266724A0A04F451D4 /* Pods_Corona_MVVM_Corona_MVVMUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		932ABC1624D2FD28004D9C28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 932ABBF724D2FD27004D9C28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 932ABBFE24D2FD27004D9C28;
+			remoteInfo = "Corona MVVM";
+		};
+		932ABC2124D2FD28004D9C28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 932ABBF724D2FD27004D9C28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 932ABBFE24D2FD27004D9C28;
+			remoteInfo = "Corona MVVM";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		062981C972AF0D169557E443 /* Pods-Corona MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corona MVVM.release.xcconfig"; path = "Target Support Files/Pods-Corona MVVM/Pods-Corona MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		26D09FB403FD9B330C96880D /* Pods_Corona_MVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Corona_MVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		672B2EA661BDD8D31B9847FA /* Pods-Corona MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corona MVVM.debug.xcconfig"; path = "Target Support Files/Pods-Corona MVVM/Pods-Corona MVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		932ABBFF24D2FD27004D9C28 /* Corona MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corona MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		932ABC0224D2FD28004D9C28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		932ABC0424D2FD28004D9C28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		932ABC0624D2FD28004D9C28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		932ABC0924D2FD28004D9C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		932ABC0B24D2FD28004D9C28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		932ABC0E24D2FD28004D9C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		932ABC1024D2FD28004D9C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		932ABC1524D2FD28004D9C28 /* Corona MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Corona MVVMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		932ABC1924D2FD28004D9C28 /* Corona_MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corona_MVVMTests.swift; sourceTree = "<group>"; };
+		932ABC1B24D2FD28004D9C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		932ABC2024D2FD28004D9C28 /* Corona MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Corona MVVMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		932ABC2424D2FD28004D9C28 /* Corona_MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corona_MVVMUITests.swift; sourceTree = "<group>"; };
+		932ABC2624D2FD28004D9C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		932ABC3424D30007004D9C28 /* CoronaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaTableCell.swift; sourceTree = "<group>"; };
+		932ABC3724D30BE2004D9C28 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		932ABC3924D3CD4F004D9C28 /* CoronaTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoronaTableCell.xib; sourceTree = "<group>"; };
+		932ABC3B24D3D017004D9C28 /* CoronaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaViewModel.swift; sourceTree = "<group>"; };
+		932ABC3D24D3D5CE004D9C28 /* CountryDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountryDetail.storyboard; sourceTree = "<group>"; };
+		932ABC3F24D3D60B004D9C28 /* CountryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
+		932ABC4124D3DE76004D9C28 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		932ABC4324D3E3BA004D9C28 /* Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Count.swift; sourceTree = "<group>"; };
+		934C7940879BF7A0C7CD7E6B /* Pods_Corona_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Corona_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B58A2D24DEF9E70023702F /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
+		93B888A224D5807F00826F7A /* ResponseGetSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGetSummary.swift; sourceTree = "<group>"; };
+		93F6A17724DB7FAD00BF5E8E /* FormatterDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterDate.swift; sourceTree = "<group>"; };
+		93F6A17924DB80F900BF5E8E /* DailyCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCount.swift; sourceTree = "<group>"; };
+		B965083266724A0A04F451D4 /* Pods_Corona_MVVM_Corona_MVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Corona_MVVM_Corona_MVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBE42EF4E53E1E8942B7A5DD /* Pods-Corona MVVM-Corona MVVMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corona MVVM-Corona MVVMUITests.release.xcconfig"; path = "Target Support Files/Pods-Corona MVVM-Corona MVVMUITests/Pods-Corona MVVM-Corona MVVMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EA796164B0E8D7B28C05F442 /* Pods-Corona MVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corona MVVMTests.debug.xcconfig"; path = "Target Support Files/Pods-Corona MVVMTests/Pods-Corona MVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F88272B5A23F838A88B92268 /* Pods-Corona MVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corona MVVMTests.release.xcconfig"; path = "Target Support Files/Pods-Corona MVVMTests/Pods-Corona MVVMTests.release.xcconfig"; sourceTree = "<group>"; };
+		FDE63A20A991A8735D4E044D /* Pods-Corona MVVM-Corona MVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corona MVVM-Corona MVVMUITests.debug.xcconfig"; path = "Target Support Files/Pods-Corona MVVM-Corona MVVMUITests/Pods-Corona MVVM-Corona MVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		932ABBFC24D2FD27004D9C28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1A06784B73ABDDE384B252 /* Pods_Corona_MVVM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		932ABC1224D2FD28004D9C28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A71F3F931FF01CB4AF2BC9D /* Pods_Corona_MVVMTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		932ABC1D24D2FD28004D9C28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E442C1821BE54240C5349383 /* Pods_Corona_MVVM_Corona_MVVMUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B3CF14BC27B53CC221817ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				934C7940879BF7A0C7CD7E6B /* Pods_Corona_MVVM.framework */,
+				B965083266724A0A04F451D4 /* Pods_Corona_MVVM_Corona_MVVMUITests.framework */,
+				26D09FB403FD9B330C96880D /* Pods_Corona_MVVMTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A920B5C1D7E86D5F4A6CC4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				672B2EA661BDD8D31B9847FA /* Pods-Corona MVVM.debug.xcconfig */,
+				062981C972AF0D169557E443 /* Pods-Corona MVVM.release.xcconfig */,
+				FDE63A20A991A8735D4E044D /* Pods-Corona MVVM-Corona MVVMUITests.debug.xcconfig */,
+				BBE42EF4E53E1E8942B7A5DD /* Pods-Corona MVVM-Corona MVVMUITests.release.xcconfig */,
+				EA796164B0E8D7B28C05F442 /* Pods-Corona MVVMTests.debug.xcconfig */,
+				F88272B5A23F838A88B92268 /* Pods-Corona MVVMTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		932ABBF624D2FD27004D9C28 = {
+			isa = PBXGroup;
+			children = (
+				932ABC0124D2FD27004D9C28 /* Corona MVVM */,
+				932ABC1824D2FD28004D9C28 /* Corona MVVMTests */,
+				932ABC2324D2FD28004D9C28 /* Corona MVVMUITests */,
+				932ABC0024D2FD27004D9C28 /* Products */,
+				6A920B5C1D7E86D5F4A6CC4F /* Pods */,
+				2B3CF14BC27B53CC221817ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		932ABC0024D2FD27004D9C28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				932ABBFF24D2FD27004D9C28 /* Corona MVVM.app */,
+				932ABC1524D2FD28004D9C28 /* Corona MVVMTests.xctest */,
+				932ABC2024D2FD28004D9C28 /* Corona MVVMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		932ABC0124D2FD27004D9C28 /* Corona MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				93F6A17624DB7F9C00BF5E8E /* Utils */,
+				932ABC3624D30BCB004D9C28 /* Model */,
+				932ABC0224D2FD28004D9C28 /* AppDelegate.swift */,
+				932ABC0424D2FD28004D9C28 /* SceneDelegate.swift */,
+				932ABC0624D2FD28004D9C28 /* ViewController.swift */,
+				932ABC0824D2FD28004D9C28 /* Main.storyboard */,
+				932ABC0B24D2FD28004D9C28 /* Assets.xcassets */,
+				932ABC0D24D2FD28004D9C28 /* LaunchScreen.storyboard */,
+				932ABC1024D2FD28004D9C28 /* Info.plist */,
+				932ABC3424D30007004D9C28 /* CoronaTableCell.swift */,
+				932ABC3924D3CD4F004D9C28 /* CoronaTableCell.xib */,
+				932ABC3B24D3D017004D9C28 /* CoronaViewModel.swift */,
+				932ABC3D24D3D5CE004D9C28 /* CountryDetail.storyboard */,
+				932ABC3F24D3D60B004D9C28 /* CountryDetailViewController.swift */,
+				93B58A2D24DEF9E70023702F /* LineChartViewController.swift */,
+			);
+			path = "Corona MVVM";
+			sourceTree = "<group>";
+		};
+		932ABC1824D2FD28004D9C28 /* Corona MVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				932ABC1924D2FD28004D9C28 /* Corona_MVVMTests.swift */,
+				932ABC1B24D2FD28004D9C28 /* Info.plist */,
+			);
+			path = "Corona MVVMTests";
+			sourceTree = "<group>";
+		};
+		932ABC2324D2FD28004D9C28 /* Corona MVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				932ABC2424D2FD28004D9C28 /* Corona_MVVMUITests.swift */,
+				932ABC2624D2FD28004D9C28 /* Info.plist */,
+			);
+			path = "Corona MVVMUITests";
+			sourceTree = "<group>";
+		};
+		932ABC3624D30BCB004D9C28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				932ABC3724D30BE2004D9C28 /* Country.swift */,
+				932ABC4124D3DE76004D9C28 /* URL.swift */,
+				932ABC4324D3E3BA004D9C28 /* Count.swift */,
+				93B888A224D5807F00826F7A /* ResponseGetSummary.swift */,
+				93F6A17924DB80F900BF5E8E /* DailyCount.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93F6A17624DB7F9C00BF5E8E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				93F6A17724DB7FAD00BF5E8E /* FormatterDate.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		932ABBFE24D2FD27004D9C28 /* Corona MVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 932ABC2924D2FD28004D9C28 /* Build configuration list for PBXNativeTarget "Corona MVVM" */;
+			buildPhases = (
+				7871C8F5E3DD360835ADF6DA /* [CP] Check Pods Manifest.lock */,
+				932ABBFB24D2FD27004D9C28 /* Sources */,
+				932ABBFC24D2FD27004D9C28 /* Frameworks */,
+				932ABBFD24D2FD27004D9C28 /* Resources */,
+				F40A32A0B612E7521FC49FBC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Corona MVVM";
+			productName = "Corona MVVM";
+			productReference = 932ABBFF24D2FD27004D9C28 /* Corona MVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		932ABC1424D2FD28004D9C28 /* Corona MVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 932ABC2C24D2FD28004D9C28 /* Build configuration list for PBXNativeTarget "Corona MVVMTests" */;
+			buildPhases = (
+				2FD2A2D8EEBF7B72BC62107A /* [CP] Check Pods Manifest.lock */,
+				932ABC1124D2FD28004D9C28 /* Sources */,
+				932ABC1224D2FD28004D9C28 /* Frameworks */,
+				932ABC1324D2FD28004D9C28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				932ABC1724D2FD28004D9C28 /* PBXTargetDependency */,
+			);
+			name = "Corona MVVMTests";
+			productName = "Corona MVVMTests";
+			productReference = 932ABC1524D2FD28004D9C28 /* Corona MVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		932ABC1F24D2FD28004D9C28 /* Corona MVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 932ABC2F24D2FD28004D9C28 /* Build configuration list for PBXNativeTarget "Corona MVVMUITests" */;
+			buildPhases = (
+				7077AB752FAA26EE7F4718F2 /* [CP] Check Pods Manifest.lock */,
+				932ABC1C24D2FD28004D9C28 /* Sources */,
+				932ABC1D24D2FD28004D9C28 /* Frameworks */,
+				932ABC1E24D2FD28004D9C28 /* Resources */,
+				5AD7E6F83CAD70D90373EFF4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				932ABC2224D2FD28004D9C28 /* PBXTargetDependency */,
+			);
+			name = "Corona MVVMUITests";
+			productName = "Corona MVVMUITests";
+			productReference = 932ABC2024D2FD28004D9C28 /* Corona MVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		932ABBF724D2FD27004D9C28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Frederic Orlando";
+				TargetAttributes = {
+					932ABBFE24D2FD27004D9C28 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					932ABC1424D2FD28004D9C28 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 932ABBFE24D2FD27004D9C28;
+					};
+					932ABC1F24D2FD28004D9C28 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 932ABBFE24D2FD27004D9C28;
+					};
+				};
+			};
+			buildConfigurationList = 932ABBFA24D2FD27004D9C28 /* Build configuration list for PBXProject "Corona MVVM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 932ABBF624D2FD27004D9C28;
+			productRefGroup = 932ABC0024D2FD27004D9C28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				932ABBFE24D2FD27004D9C28 /* Corona MVVM */,
+				932ABC1424D2FD28004D9C28 /* Corona MVVMTests */,
+				932ABC1F24D2FD28004D9C28 /* Corona MVVMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		932ABBFD24D2FD27004D9C28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932ABC0F24D2FD28004D9C28 /* LaunchScreen.storyboard in Resources */,
+				932ABC3E24D3D5CE004D9C28 /* CountryDetail.storyboard in Resources */,
+				932ABC3A24D3CD4F004D9C28 /* CoronaTableCell.xib in Resources */,
+				932ABC0C24D2FD28004D9C28 /* Assets.xcassets in Resources */,
+				932ABC0A24D2FD28004D9C28 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		932ABC1324D2FD28004D9C28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		932ABC1E24D2FD28004D9C28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FD2A2D8EEBF7B72BC62107A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Corona MVVMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AD7E6F83CAD70D90373EFF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Corona MVVM-Corona MVVMUITests/Pods-Corona MVVM-Corona MVVMUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Corona MVVM-Corona MVVMUITests/Pods-Corona MVVM-Corona MVVMUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Corona MVVM-Corona MVVMUITests/Pods-Corona MVVM-Corona MVVMUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7077AB752FAA26EE7F4718F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Corona MVVM-Corona MVVMUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7871C8F5E3DD360835ADF6DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Corona MVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F40A32A0B612E7521FC49FBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Corona MVVM/Pods-Corona MVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Corona MVVM/Pods-Corona MVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Corona MVVM/Pods-Corona MVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		932ABBFB24D2FD27004D9C28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F6A17824DB7FAD00BF5E8E /* FormatterDate.swift in Sources */,
+				932ABC3C24D3D017004D9C28 /* CoronaViewModel.swift in Sources */,
+				932ABC0724D2FD28004D9C28 /* ViewController.swift in Sources */,
+				93B888A324D5807F00826F7A /* ResponseGetSummary.swift in Sources */,
+				93B58A2E24DEF9E70023702F /* LineChartViewController.swift in Sources */,
+				932ABC0324D2FD28004D9C28 /* AppDelegate.swift in Sources */,
+				932ABC4024D3D60B004D9C28 /* CountryDetailViewController.swift in Sources */,
+				932ABC3524D30007004D9C28 /* CoronaTableCell.swift in Sources */,
+				932ABC4424D3E3BA004D9C28 /* Count.swift in Sources */,
+				932ABC3824D30BE2004D9C28 /* Country.swift in Sources */,
+				932ABC0524D2FD28004D9C28 /* SceneDelegate.swift in Sources */,
+				932ABC4224D3DE76004D9C28 /* URL.swift in Sources */,
+				93F6A17A24DB80F900BF5E8E /* DailyCount.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		932ABC1124D2FD28004D9C28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932ABC1A24D2FD28004D9C28 /* Corona_MVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		932ABC1C24D2FD28004D9C28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932ABC2524D2FD28004D9C28 /* Corona_MVVMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		932ABC1724D2FD28004D9C28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 932ABBFE24D2FD27004D9C28 /* Corona MVVM */;
+			targetProxy = 932ABC1624D2FD28004D9C28 /* PBXContainerItemProxy */;
+		};
+		932ABC2224D2FD28004D9C28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 932ABBFE24D2FD27004D9C28 /* Corona MVVM */;
+			targetProxy = 932ABC2124D2FD28004D9C28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		932ABC0824D2FD28004D9C28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				932ABC0924D2FD28004D9C28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		932ABC0D24D2FD28004D9C28 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				932ABC0E24D2FD28004D9C28 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		932ABC2724D2FD28004D9C28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		932ABC2824D2FD28004D9C28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		932ABC2A24D2FD28004D9C28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 672B2EA661BDD8D31B9847FA /* Pods-Corona MVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CXXG8H769J;
+				INFOPLIST_FILE = "Corona MVVM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hoonian.Corona-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		932ABC2B24D2FD28004D9C28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 062981C972AF0D169557E443 /* Pods-Corona MVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CXXG8H769J;
+				INFOPLIST_FILE = "Corona MVVM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hoonian.Corona-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		932ABC2D24D2FD28004D9C28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA796164B0E8D7B28C05F442 /* Pods-Corona MVVMTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CXXG8H769J;
+				INFOPLIST_FILE = "Corona MVVMTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hoonian.Corona-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Corona MVVM.app/Corona MVVM";
+			};
+			name = Debug;
+		};
+		932ABC2E24D2FD28004D9C28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F88272B5A23F838A88B92268 /* Pods-Corona MVVMTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CXXG8H769J;
+				INFOPLIST_FILE = "Corona MVVMTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hoonian.Corona-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Corona MVVM.app/Corona MVVM";
+			};
+			name = Release;
+		};
+		932ABC3024D2FD28004D9C28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE63A20A991A8735D4E044D /* Pods-Corona MVVM-Corona MVVMUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CXXG8H769J;
+				INFOPLIST_FILE = "Corona MVVMUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hoonian.Corona-MVVMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Corona MVVM";
+			};
+			name = Debug;
+		};
+		932ABC3124D2FD28004D9C28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBE42EF4E53E1E8942B7A5DD /* Pods-Corona MVVM-Corona MVVMUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CXXG8H769J;
+				INFOPLIST_FILE = "Corona MVVMUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hoonian.Corona-MVVMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Corona MVVM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		932ABBFA24D2FD27004D9C28 /* Build configuration list for PBXProject "Corona MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				932ABC2724D2FD28004D9C28 /* Debug */,
+				932ABC2824D2FD28004D9C28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		932ABC2924D2FD28004D9C28 /* Build configuration list for PBXNativeTarget "Corona MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				932ABC2A24D2FD28004D9C28 /* Debug */,
+				932ABC2B24D2FD28004D9C28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		932ABC2C24D2FD28004D9C28 /* Build configuration list for PBXNativeTarget "Corona MVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				932ABC2D24D2FD28004D9C28 /* Debug */,
+				932ABC2E24D2FD28004D9C28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		932ABC2F24D2FD28004D9C28 /* Build configuration list for PBXNativeTarget "Corona MVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				932ABC3024D2FD28004D9C28 /* Debug */,
+				932ABC3124D2FD28004D9C28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 932ABBF724D2FD27004D9C28 /* Project object */;
+}
